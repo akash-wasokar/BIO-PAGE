@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  background: linear-gradient(to bottom, #121212, #1e1e1e);
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  background-color: white;
+  padding: 30px;
+  max-width: 600px;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow:0 0 30px rgba(255,255,255, 0.08);
+  border: 1px solid #333;
+}
+
+h1 {
+  color: purple;
+}
+
+h2 {
+  color: red;
+  margin-top: 20px;
+}
+
+
+.photo {
+  width: 150px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+ul {
+  list-style-type: disc;
+  text-align: left;
+  max-width: 400px;
+  margin: auto;
+  padding-left: 20px;
+}
+
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+
+.photo:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+
+h1, h2, p, ul {
+  animation: fadeIn 1s ease forwards;
+  opacity: 0;
+  animation-delay: 0.5s;
+}
+a {
+  color: #007BFF;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+li{
+    text-align: center;
+}
